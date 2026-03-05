@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.6;
+    }
+    header {
+      margin-bottom: 24px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+    a, button {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+    button {
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      background: #f6f6f6;
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>Hello, I’m Shahad 👋</h1>
+    <p>Welcome to my page.</p>
+  </header>
 
-<h1>Hello I'm Shahad</h1>
-<p>welcome to my page.</p>
+  <section class="card">
+    <h2>About Me</h2>
+    <p>
+      Computer Science graduate. Building my skills and projects step by step.
+    </p>
+  </section>
 
+  <section class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li>My Website (this one)</li>
+      <li>Project 2 (soon)</li>
+      <li>Project 3 (soon)</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Links</h2>
+    <a href="https://github.com/" target="_blank">My GitHub</a>
+    <button onclick="alert('Email me: your@email.com')">Contact</button>
+  </section>
 </body>
 </html>
