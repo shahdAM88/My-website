@@ -3,67 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-    }
-    header {
-      margin-bottom: 24px;
-    }
-    .card {
-      border: 1px solid #ddd;
-      padding: 16px;
-      border-radius: 12px;
-      margin: 16px 0;
-    }
-    a, button {
-      display: inline-block;
-      margin-right: 10px;
-      margin-top: 10px;
-      text-decoration: none;
-    }
-    button {
-      padding: 10px 14px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-      background: #f6f6f6;
-    }
-  </style>
+  <title>Shahad | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Hello, I’m Shahad 👋</h1>
-    <p>Welcome to my page.</p>
+  <header class="top">
+    <div class="container nav">
+      <div class="brand">SH</div>
+
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="card">
-    <h2>About Me</h2>
-    <p>
-      Computer Science graduate. Building my skills and projects step by step.
-    </p>
-  </section>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="tag">Computer Science Graduate</p>
+        <h1>Hi, I’m <span class="accent">Shahad</span> 👋</h1>
+        <p class="sub">
+          I’m building my skills in web development and sharing my projects here.
+        </p>
 
-  <section class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li>My Website (this one)</li>
-      <li>Project 2 (soon)</li>
-      <li>Project 3 (soon)</li>
-    </ul>
-  </section>
+        <div class="actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
 
-  <section class="card">
-    <h2>Links</h2>
-    <a href="https://github.com/" target="_blank">My GitHub</a>
-    <button onclick="alert('Email me: your@email.com')">Contact</button>
-  </section>
+      <div class="card">
+        <h3>Quick Info</h3>
+        <ul class="list">
+          <li>📍 Saudi Arabia</li>
+          <li>💻 Web beginner → growing fast</li>
+          <li>🚀 Goal: Strong portfolio</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="p">
+        I’m Shahad. I enjoy building clean, simple websites and learning step by step.
+        This site will keep improving as I add more projects.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="project">
+          <h3>My Website</h3>
+          <p class="p">My first GitHub Pages website.</p>
+          <div class="mini">
+            <a class="link" href="https://shahdam88.github.io/My-website/" target="_blank">Live</a>
+            <span class="dot">•</span>
+            <a class="link" href="https://github.com/shahdam88/My-website" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Project 2</h3>
+          <p class="p">Coming soon.</p>
+          <div class="mini">
+            <span class="muted">In progress</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Project 3</h3>
+          <p class="p">Coming soon.</p>
+          <div class="mini">
+            <span class="muted">In progress</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="p">Put your links here:</p>
+
+      <div class="contact">
+        <a class="btn" href="https://github.com/shahdam88" target="_blank">GitHub</a>
+        <a class="btn ghost" href="mailto:your@email.com">Email</a>
+      </div>
+
+      <p class="note"> 
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Shahad</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
