@@ -162,3 +162,13 @@ height:70px;
 
 }
 
+.dark-mode .card{
+  background:#1e293b;
+}
+
+.dark-mode header{
+  background:#020617;
+}
+
+
+
