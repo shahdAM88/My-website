@@ -168,6 +168,81 @@ height:70px;
 
 .dark-mode header{
   background:#020617;
+  .side-layout{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  width:min(1100px, 92vw);
+  margin:40px auto;
+}
+
+.side-text{
+  flex:1;
+}
+
+.slider{
+  flex:1;
+  position:relative;
+  overflow:hidden;
+  border-radius:16px;
+}
+
+.slides{
+  display:flex;
+  transition:transform 450ms ease;
+}
+
+.slide{ min-width:100%; }
+
+.slide img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  display:block;
+}
+
+/* أزرار التنقل */
+.nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  border:0;
+  width:44px;
+  height:44px;
+  border-radius:999px;
+  cursor:pointer;
+  font-size:28px;
+  line-height:44px;
+  background:rgba(0,0,0,0.55);
+  color:white;
+}
+.prev{ left:12px; }
+.next{ right:12px; }
+
+.dots{
+  position:absolute;
+  left:50%;
+  bottom:12px;
+  transform:translateX(-50%);
+  display:flex;
+  gap:8px;
+}
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  border:0;
+  cursor:pointer;
+  background:rgba(255,255,255,0.55);
+}
+.dot.active{ background:white; }
+
+/* على الجوال يصير فوق وتحت بدل جنب */
+@media (max-width: 800px){
+  .side-layout{ flex-direction:column; }
+  .slide img{ height:280px; }
+}
+
 }
 
 
